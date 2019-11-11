@@ -185,7 +185,7 @@ public class AudioRecorderModule extends ReactContextBaseJavaModule implements
         MediaRecorder recorder = new MediaRecorder();
 
         // TODO: allow configuring?
-        recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+        recorder.setAudioSource(MediaRecorder.AudioSource.VOICE_RECOGNITION);
 
         int format = formatFromPath(path);
         int encoder = encoderFromPath(path);
